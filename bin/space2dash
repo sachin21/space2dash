@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'space2dash'
+
+result  = Space2dash.convert(ARGV)
+puts Space2dash.create_new_branch(result)
