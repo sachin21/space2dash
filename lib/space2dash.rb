@@ -7,9 +7,7 @@ module Space2dash
     end
 
     def create_new_branch(dash_include_sentence)
-      if system "git checkout -b #{dash_include_sentence}"
-        "Branch has been created."
-      end
+      system "git checkout -b #{dash_include_sentence}"
     end
   end
 end

@@ -14,7 +14,6 @@ From the terminal:
 
     $ space2dash new branch -c
     =>  Switched to the new branch 'new-branch’
-    =>  Branch has been created.
 
 Or
 
