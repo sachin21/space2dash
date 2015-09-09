@@ -9,15 +9,32 @@ Install it yourself as:
     $ gem install space2dash
 
 ## Usage
-
 From the terminal:
 
-    $ space2dash new branch -c
-    =>  Switched to the new branch 'new-branch’
+### 1. e.g. Create the new branch
 
-Or
+```
+$ space2dash new branch -c
+=>  Switched to the new branch 'new_branch’
+```
 
-    $ git branch -m $(space2dash renamed branch) # Output to the standard output
+Run with `--create` or `-c` options.
+
+### 2. e.g. Rename the already created a branch
+
+```
+$ git branch -m $(space2dash renamed branch)
+```
+
+When option is nothing, space2dash has outputted to the standard output.
+
+## Shorthand
+
+A shorthand alias for space2dash can also be used.
+
+```
+s2d new branch
+```
 
 ## Contributing
 
