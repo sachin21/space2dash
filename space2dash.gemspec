@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
 
     Or
 
-    $ git branch -m $(space2dash renamed branch) # Output to the standard output
+    $ git branch -m $(space2dash renamed branch) # space2dash has outputted to the standard output.
 
     ----------------------------------------------------------
     ..........................................................
