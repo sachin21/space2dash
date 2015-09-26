@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Space2dash::VERSION
   spec.authors       = ['sachin21']
   spec.email         = ['sachin21.developer@gmail.com']
-  spec.description   = 'change the space into dash'
-  spec.summary       = 'change the space into dash'
+  spec.description   = 'Change the space into dash'
+  spec.summary       = 'Change the space into dash'
   spec.homepage      = 'http://github.com/sachin21/space2dash'
   spec.license       = 'MIT'
 
