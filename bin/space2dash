@@ -4,7 +4,7 @@ require 'space2dash'
 CREATE_FLAGS = %w(-c --create)
 
 args = ARGV.reject { |arg| CREATE_FLAGS.include?(arg) }
-result  = Space2dash.convert(args)
+result = Space2dash.convert(args)
 
 if ARGV.include?('-c') || ARGV.include?('--create')
   print Space2dash.create_new_branch(result)
