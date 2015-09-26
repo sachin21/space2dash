@@ -1,4 +1,4 @@
-# Space2dash
+# Space2dash [![Build Status](https://travis-ci.org/sachin21/space2dash.svg?branch=master)](https://travis-ci.org/sachin21/space2dash)
 ## What is space2dash
 Change the space into dash.
 space2dash is a useful command when you want to check out a branch.
