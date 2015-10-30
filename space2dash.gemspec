@@ -18,8 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.post_install_message = %q{
-    __________________________________________________________
+  spec.post_install_message = <<-EOF
     ..........................................................
     __________________________________________________________
 
@@ -27,19 +26,18 @@ Gem::Specification.new do |spec|
 
     ************************* Usage **************************
 
-    From the terminal:
+    From the command line:
 
     $ space2dash new branch -c
     =>  Switched to the new branch 'new-branch’
 
     Or
 
-    $ git branch -m $(space2dash renamed branch) # space2dash has outputted to the standard output.
+    $ git branch -m $(space2dash renamed branch)
 
     ----------------------------------------------------------
     ..........................................................
-    __________________________________________________________
-  }
+  EOF
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
