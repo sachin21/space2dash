@@ -36,6 +36,9 @@ A shorthand alias for space2dash can also be used.
 s2d new branch
 ```
 
+## Credits
+- Installed information based on [Tmuxinator](https://github.com/tmuxinator/tmuxinator)
+
 ## Contributing
 
 1. Fork it
