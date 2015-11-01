@@ -6,6 +6,6 @@ module Space2dash
   end
 
   def self.create_new_branch(dash_include_sentence)
-    system "git checkout -b #{dash_include_sentence}"
+    system "git checkout -b #{dash_include_sentence} &> /dev/null"
   end
 end
