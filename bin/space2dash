@@ -4,10 +4,13 @@ require 'space2dash'
 CREATE_FLAGS = %w(-c --create)
 
 args = ARGV.reject { |arg| CREATE_FLAGS.include?(arg) }
-result = Space2dash.convert(args)
+underscore_include_sentence = Space2dash.convert(args)
 
-if ARGV.include?('-c') || ARGV.include?('--create')
-  print Space2dash.create_new_branch(result)
-else
-  print result
-end
+result =
+  if ARGV.include?('-c') || ARGV.include?('--create')
+    Space2dash.create_new_branch(result)
+  else
+    underscore_include_sentence
+  end
+
+puts result
