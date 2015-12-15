@@ -1,8 +1,10 @@
+# coding: utf-8
+
 require 'spec_helper'
 
 describe Space2dash do
   let(:branch_name) { 'foo-bar' }
-  let(:hidden) { '&> /dev/null'}
+  let(:hidden) { '&> /dev/null' }
 
   it 'returns dash included in string' do
     expect(Space2dash.convert(['fuga hoge foo'])).to include('-') # String case
@@ -23,7 +25,7 @@ describe Space2dash do
   describe '.create_new_branch' do
     after { checkout_and_remove_branch }
 
-    context "when exist a git repository" do
+    context 'when exist a git repository' do
       before { checkout_and_remove_branch }
 
       it 'creates the new branch' do
@@ -31,7 +33,7 @@ describe Space2dash do
       end
     end
 
-    context "when exist a git repository" do
+    context 'when exist a git repository' do
       before { create_branch }
 
       it 'creates the new branch' do
