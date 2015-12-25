@@ -18,26 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.post_install_message = <<-EOF
-    ..........................................................
-    __________________________________________________________
-
-    Thank you for installing space2dash.
-
-    ************************* Usage **************************
-
-    From the command line:
-
-    $ space2dash new branch -c
-    =>  Switched to the new branch 'new-branch’
-
-    Or
-
-    $ git branch -m $(space2dash renamed branch)
-
-    ----------------------------------------------------------
-    ..........................................................
-  EOF
+  spec.post_install_message = "Thank you for installing space. But this gem is deprecated. \nPlease install space2hyphen.\n\n"
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
