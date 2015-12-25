@@ -2,5 +2,5 @@
 
 # This module holds the Space2underscore version information.
 module Space2dash
-  VERSION = '0.0.4'
+  VERSION = '0.0.5'
 end
