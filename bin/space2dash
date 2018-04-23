@@ -1,18 +1,18 @@
 #!/usr/bin/env ruby
-# coding: utf-8
+# frozen_string_literal: true
 
 require 'space2dash'
 
-CREATE_FLAGS = %w(-c --create)
+CREATE_FLAGS = %w[-c --create].freeze
 
 args = ARGV.reject { |arg| CREATE_FLAGS.include?(arg) }
-underscore_include_sentence = Space2dash.convert(args)
+dash_include_sentence = Space2dash.convert(args)
 
 result =
   if ARGV.include?('-c') || ARGV.include?('--create')
     Space2dash.create_new_branch(result)
   else
-    underscore_include_sentence
+    dash_include_sentence
   end
 
 puts result

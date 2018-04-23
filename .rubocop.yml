@@ -1,6 +1,16 @@
 AllCops:
-  Exclude:
-    - 'vendor/**/*'
+  TargetRubyVersion: 2.3
 
-Style/Encoding:
-  Enabled: true
+  Exclude:
+    - 'vendor/bundle/**/*'
+
+  DisplayCopNames: true
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/MethodLength:
+  Max: 15

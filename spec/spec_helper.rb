@@ -1,7 +1,12 @@
-# coding: utf-8
+# frozen_string_literal: true
 
-require 'bundler/setup'
 require 'space2dash'
+
+if ENV['COVERALLS']
+  require 'coveralls'
+  Coveralls.wear!
+end
+
 Bundler.setup
 
 RSpec.configure do |config|

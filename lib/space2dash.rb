@@ -1,14 +1,13 @@
-# coding: utf-8
-
-require 'space2dash/version'
+# frozen_string_literal: true
 
 # This is the main functions.
 module Space2dash
-  def self.convert(argv)
-    argv.length == 1 ? argv[0].strip.gsub(/\s/, '-') : argv.join('-')
-  end
-
-  def self.create_new_branch(dash_include_sentence)
-    system "git checkout -b #{dash_include_sentence} &> /dev/null"
-  end
 end
+
+require 'space2dash/version'
+
+require 'space2dash/executor'
+require 'space2dash/printer'
+require 'space2dash/dash'
+require 'space2dash/usage'
+require 'space2dash/cli'

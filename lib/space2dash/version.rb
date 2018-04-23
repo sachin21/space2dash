@@ -1,6 +1,6 @@
-# coding: utf-8
+# frozen_string_literal: true
 
-# This module holds the Space2underscore version information.
+# This module holds the Space2dash version information.
 module Space2dash
-  VERSION = '0.0.5'
+  VERSION = '0.5.2'
 end
